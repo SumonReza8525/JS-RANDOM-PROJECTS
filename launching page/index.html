@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="./style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  </head>
+  <body>
+    <div
+      class="w-full h-[100vh] bg-[url('./images/background.png')] bg-cover bg-center bg-no-repeat"
+    >
+      <div class="translate-x-10 translate-y-10">
+        <img class="w-[120px] lg:w-[200px]" src="./images/logo.png" alt="" />
+      </div>
+
+      <div class="translate-y-60 p-8 space-y-3 lg:pl-12">
+        <p class="text-2xl text-white lg:text-4xl animate__bounceIn">
+          Website is Under Maintenance
+        </p>
+        <h1 class="text-5xl lg:text-8xl font-bold">
+          We're
+          <span
+            class="bg-gradient-to-r from-blue-300 to-white bg-clip-text text-transparent animate__animated animate__bounce"
+            >Launching</span
+          >
+          Soon
+        </h1>
+        <div class="flex gap-7 mt-8 mb-7 text-white">
+          <div class="">
+            <p id="days" class="text-3xl font-bold">00</p>
+            <span>Days</span>
+          </div>
+          <div>
+            <p id="hours" class="text-3xl font-bold">00</p>
+            <span>Hours</span>
+          </div>
+          <div>
+            <p id="min" class="text-3xl font-bold">00</p>
+            <span>Minutes</span>
+          </div>
+          <div>
+            <p id="sec" class="text-3xl font-bold">00</p>
+            <span>Seconds</span>
+          </div>
+        </div>
+
+        <button
+          class="btn btn-outline btn-secondary text-lg flex items-center gap-2 justify-center"
+        >
+          Learn More <img class="w-[15px]" src="./images/triangle.png" alt="" />
+        </button>
+      </div>
+
+      <img
+        class="absolute bottom-[-10%] right-5 lg:right-[10%] ani"
+        src="./images/rocket.png"
+        alt=""
+      />
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
